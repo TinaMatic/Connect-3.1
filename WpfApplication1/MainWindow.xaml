@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="437.91" Width="904.422" Background="#FFFF00C9">
+    <Grid x:Name="PlayGrid" Margin="296,0,-6,-0.333" Background="#FFECFF00" MouseLeftButtonDown="PlayGrid_MouseLeftButtonDown">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Label1" Content="Player 1" HorizontalAlignment="Left" Margin="-262,26,0,16" RenderTransformOrigin="-0.439,-0.718" Width="61"/>
+        <TextBox x:Name="txtPlayer1" HorizontalAlignment="Left" Height="23" Margin="-155,26,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label2" Content="Player 2" HorizontalAlignment="Left" Margin="-262,9,0,0" VerticalAlignment="Top" Height="34" RenderTransformOrigin="-0.09,2.465" Width="71" Grid.Row="1"/>
+        <TextBox x:Name="txtPlayer2" HorizontalAlignment="Left" Height="23" Margin="-155,9,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label3" Content="Player 1 win" HorizontalAlignment="Left" Margin="-274,4,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-0.965,-0.154"/>
+        <Label x:Name="lblPlayer1" Content="0&#xA;" HorizontalAlignment="Left" Margin="-131,4,0,38" Grid.Row="2" Width="73"/>
+        <Label x:Name="Label4" Content="Player 2 win" HorizontalAlignment="Left" Margin="-274,35,0,0" Grid.Row="2" VerticalAlignment="Top" Width="83"/>
+        <Label x:Name="lblPlayer2" Content="0&#xA;" HorizontalAlignment="Left" Margin="-131,35,0,0" Grid.Row="2" Height="26" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="Label5" Content="Tie" HorizontalAlignment="Left" Margin="-274,66,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-1.263,-0.128" Grid.RowSpan="2" Width="73"/>
+        <Label x:Name="lblTie" HorizontalAlignment="Left" Height="27" Margin="-131,65,0,0" Grid.Row="2" VerticalAlignment="Top" Width="119" Grid.RowSpan="2" Content="0"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="-203,26.333,0,0" Grid.Row="5" VerticalAlignment="Top" Width="75" Click="btnReset_Click"/>
+        <RadioButton x:Name="rbHard" GroupName="Difficulty" Content="Hard" HorizontalAlignment="Left" Margin="-274,31,0,0" Grid.Row="4" VerticalAlignment="Top" Height="15"/>
+        <RadioButton x:Name="rbMedium" GroupName="Difficulty" Content="Medium" HorizontalAlignment="Left" Margin="-274,51,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbEasy" GroupName="Difficulty" Content="Easy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-274,66,0,0" Grid.Row="4" Grid.RowSpan="2" IsChecked="True"/>
+        <RadioButton x:Name="rbAIPlayer" GroupName ="PlayerType" Content="Human vs computer" HorizontalAlignment="Left" Margin="-282,49,0,0" Grid.Row="3" VerticalAlignment="Top" Checked="rbAIPlayer_Checked"/>
+        <RadioButton x:Name="rbHuman" GroupName ="PlayerType" Content="Human vs human" HorizontalAlignment="Left" Margin="-282,29,0,0" Grid.Row="3" VerticalAlignment="Top" IsChecked="True"/>
+
+    </Grid>
+</Window>
